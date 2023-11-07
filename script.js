@@ -46,7 +46,7 @@ function updateCounter() {
   let currentCounter = sessionStorage.getItem("counter") || 0;
   currentCounter++;
   sessionStorage.setItem("counter", currentCounter);
-  document.getElementById("counterDisplay").textContent = currentCounter;
+  document.getElementById("counterDisplay").innerText = currentCounter;
 }
 
 function startCounter() {
